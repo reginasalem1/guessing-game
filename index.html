@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multiple-Question Quiz</title>
+
+    <style>
+        h1{
+            color: rgb(46, 46, 124);
+            /*text-decoration: underline;*/
+            margin-left:22%;
+        }
+
+        h4, p{
+            text-align: center;
+        }
+        button{
+            transition: all 0.5s;
+            background-color: rgb(238, 231, 220);
+        }
+        .clicked{
+            background: red;
+        }
+        .clicked.correct{
+            background: green;
+            rotate: 360deg;
+        }
+    
+    </style>
+</head>
+
+<body style="background-color: rgb(190, 178, 201);">
+    <h1>🎵 THE MUSIC QUIZ 🎵</h1>
+
+    <ol>
+    <div class="Q1">
+        <br><h3> <li> What song was released in the 90's?</li></h3>
+        <button> Bohemian Raphsody - Queen</button>
+        <button class="correct"> Wannabe - Spice Girls</button>
+        <button> Uptown Funk - Bruno Mars</button>
+    </div>
+
+    <div class="Q2">
+        <br><h3><li>Which are Justin Bieber songs?</li></h3>
+        <button> Baby </button>
+        <button> Confident </button>
+        <button> Love Youself </button>
+        <button class="correct"> All of them </button>
+    </div>
+
+    <div class="Q3">
+        <br><h3><li>Which 90s boy band that is still active?</li></h3>
+        <button class="correct"> Backstreet Boys </button>
+        <button> NSYNC </button>
+        <button> New Kids on the Block </button>
+    </div>
+
+    <div class="Q4">
+        <br><h3><li>Who is the eldest of the Jonas Brothers?</li></h3>
+        <button> Joe </button>
+        <button class="correct"> Kevin </button>
+        <button> Nick </button>
+    </div>
+
+    <div class="Q5">
+        <br><h3><li>What is Rihanna's first album?</li></h3>
+        <button> Loud </button>
+        <button> A Girl Like Me </button>
+        <button class="correct"> Music Of The Sun </button>
+    </div>
+
+    <div class="Q6">
+        <br><h3><li>What is Rihanna's last name?</li></h3>
+        <button class="correct"> Fenty </button>
+        <button> Thompson </button>
+        <button> Daria </button>
+    </div>
+
+    <div class="Q7">
+        <br><h3><li>What is Bruno Mars' real name?</li></h3>
+        <button class="correct"> Peter Hernandez </button>
+        <button> Pedro Hernandez </button>
+        <button> Antonio Hernandez </button>
+    </div>
+
+    <div class="Q8">
+        <br><h3><li>Which song is not by Bruno Mars?</li></h3>
+        <button> Marry You </button>
+        <button class="correct"> Perfect Two </button>
+        <button> Count on Me </button>
+        <button> Gorilla </button>
+    </div>
+
+    <div class="Q9">
+        <br><h3><li>What is the opening line of Jingle Bells?</li></h3>
+        <button> Rockin' Around </button>
+        <button> Chesnuts roasting </button>
+        <button class="correct"> Dashing through the snow </button>
+    </div>
+
+    <div class="Q10">
+        <br><h3><li>What is a song from Taylor Swift's 1989 album?</li></h3>
+        <button class="correct"> Style </button>
+        <button> End Game </button>
+        <button> Back to December </button>
+    </div>
+    </ol>
+
+    <p>
+        <b> <br><br>
+            SCORE = 
+            <span class="score-element"> 0 </span>
+        </b>
+    </p>
+
+    <h4> Did you get 10? If you did... <br> CONGRATS! </h4>
+
+    <script>
+        //Define button
+        let myButtons = document.querySelectorAll('button');
+        let scoreElement = document.querySelector('.score-element');
+
+        let score = 0;
+
+        function disableButtons(question) {
+
+            let currentButtons = question.querySelectorAll("button");
+
+            for (let button of currentButtons){
+                button.disabled = true;
+            }
+        }
+        
+        function checkAnswer(event){
+            //alert ("Checking answer")
+            let button = event.target;
+            let question = button.parentElement;
+
+            //Get boolean (if button has class correct or not)
+            let isCorrect = button.classList.contains("correct");
+            button.classList.add("clicked");
+
+
+            if (isCorrect){
+                score++;
+                scoreElement.innerText = score;
+            
+            } else{
+                button.classList.add("clicked");
+            }
+
+            disableButtons(question);
+        }
+
+        for(let button of myButtons){
+            console.log(button);
+
+          //When clicked, check answer
+            button.onclick = checkAnswer;
+
+        };
+
+    </script>
+
+</body>
+</html>
