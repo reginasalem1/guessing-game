@@ -26,6 +26,10 @@
             background: green;
             rotate: 360deg;
         }
+
+        .exp {
+            display: none;
+        }
     
     </style>
 </head>
@@ -40,8 +44,7 @@
         <button class="correct"> Wannabe - Spice Girls</button>
         <button> Uptown Funk - Bruno Mars</button>
         <div class="exp">
-            Wannabe Music 
-        </div>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/wDkhe2xo7Mo?si=lzorXFsBWhLipwS8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>        </div>
     </div>
 
     <div class="Q2">
@@ -134,6 +137,14 @@
                 button.disabled = true;
             }
         }
+
+        function showExp(question) {
+
+            let exp = question.querySelector(".exp");
+            console.log(exp);
+            exp.style.display="block"
+
+        }
         
         function checkAnswer(event){
             //alert ("Checking answer")
@@ -154,10 +165,11 @@
             }
 
             disableButtons(question);
+            showExp(question);
         }
 
         for(let button of myButtons){
-            console.log(button);
+            /*console.log(button);*/
 
           //When clicked, check answer
             button.onclick = checkAnswer;
