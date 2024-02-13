@@ -9,6 +9,7 @@
 
         html{
             align-content: center;
+            font-family: "Monaco", "Courier New", monospace;
         }
 
         h1{
@@ -23,29 +24,47 @@
 
         .question, h3 {
             text-align: center;
+            color: rgb(46, 46, 124);
         }
 
         button{
             transition: all 0.5s;
             background-color: rgb(238, 231, 220);
+            border: 2px solid rgb(238, 231, 220);
+            border-radius: 5px;
+            
             text-align: center;
+            font-family: "Monaco", "Courier New", monospace;
+            text-transform: uppercase;
+            font-weight: 600;
         }
+
         .clicked{
             background: red;
         }
         .clicked.correct{
             background: green;
         }
-
         .exp {
             display: none;
             text-align: center;
         }
 
-        footer, h2{
+        footer {
             color: rgb(46, 46, 124);
             text-align: center;
 
+        }
+
+        h2{
+            color: rgb(46, 46, 124);
+            text-align: center;
+            font-weight: bolder;
+
+            position: fixed;
+            bottom: 0;
+            right: 0;
+            width: 200px;
         }
     
     </style>
@@ -56,9 +75,9 @@
 
     <div class="question">
         <br>
-        <h3> What song was released in the 90's? </h3>
-        <button> Bohemian Raphsody - Queen</button>
-        <button class="correct"> Wannabe - Spice Girls</button>
+        <h3>What song was released in the 90's?</h3>
+        <button> Bohemian Raphsody - Queen</button><br><br>
+        <button class="correct"> Wannabe - Spice Girls</button><br><br>
         <button> Uptown Funk - Bruno Mars</button><br><br>
         <div class = "exp">
             <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/1Je1IMUlBXcx1Fz0WE7oPT?utm_source=generator&theme=0" width="50%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>        
@@ -66,10 +85,10 @@
     </div>
 
     <div class="question">
-        <br><h3>Which are Justin Bieber songs?</h3>
-        <button> Baby </button>
-        <button> Confident </button>
-        <button> Love Youself </button>
+        <h3>Which are Justin Bieber songs?</h3>
+        <button> Baby </button><br><br>
+        <button> Confident </button><br><br>
+        <button> Love Youself </button><br><br>
         <button class="correct"> All of them </button><br><br>
         <div class = "exp">
             <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/6epn3r7S14KUqlReYr77hA?utm_source=generator&theme=0" width="50%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
@@ -77,9 +96,9 @@
     </div>
 
     <div class="question">
-        <br><h3>Which 90s boy band that is still active?</h3>
-        <button class="correct"> Backstreet Boys </button>
-        <button> NSYNC </button>
+        <h3>Which 90s boy band that is still active?</h3>
+        <button class="correct"> Backstreet Boys </button><br><br>
+        <button> NSYNC </button><br><br>
         <button> New Kids on the Block </button><br><br>
         <div class = "exp">
             <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/47BBI51FKFwOMlIiX6m8ya?utm_source=generator&theme=0" width="50%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>        
@@ -87,9 +106,9 @@
     </div>
 
     <div class="question">
-        <br><h3>Who is the eldest of the Jonas Brothers?</h3>
-        <button> Joe </button>
-        <button class="correct"> Kevin </button>
+        <h3>Who is the eldest of the Jonas Brothers?</h3>
+        <button> Joe </button><br><br>
+        <button class="correct"> Kevin </button><br><br>
         <button> Nick </button><br><br>
         <div class = "exp">
             <img src="https://www.adnradio.cl/resizer/w6_JcIq3QDJsHKXZh1tAtJNilt4=/768x576/filters:format(jpg):quality(70)/cloudfront-us-east-1.images.arcpublishing.com/prisachile/LQY4VE42QNPZLFJS25VQR3MPME.jpg" alt="Kevin" style="width: 280px; height: 200px">
@@ -97,9 +116,9 @@
     </div>
 
     <div class="question">
-        <br><h3>What is Rihanna's first album?</h3>
-        <button> Loud </button>
-        <button> A Girl Like Me </button>
+        <h3>What is Rihanna's first album?</h3>
+        <button> Loud </button><br><br>
+        <button> A Girl Like Me </button><br><br>
         <button class="correct"> Music Of The Sun </button><br><br>
         <div class = "exp">
             <iframe style="border-radius:12px" src="https://open.spotify.com/embed/album/4FyGpObwABjn0o8Tdp7AZz?utm_source=generator&theme=0" width="50%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>        
@@ -107,9 +126,9 @@
     </div>
 
     <div class="question">
-        <br><h3>What is Rihanna's last name?</h3>
-        <button class="correct"> Fenty </button>
-        <button> Thompson </button>
+        <h3>What is Rihanna's last name?</h3>
+        <button class="correct"> Fenty </button><br><br>
+        <button> Thompson </button><br><br>
         <button> Daria </button><br><br>
         <div class = "exp">
             <img src="https://assets.teenvogue.com/photos/59c2ad34ecf80f4919690b31/16:9/w_2560%2Cc_limit/fenty-lede.jpg" alt="Fenty" style="width: 280px; height: 200px">      
@@ -117,9 +136,9 @@
     </div>
 
     <div class="question">
-        <br><h3>What is Bruno Mars' real name?</h3>
-        <button class="correct"> Peter Hernandez </button>
-        <button> Pedro Hernandez </button>
+        <h3>What is Bruno Mars' real name?</h3>
+        <button class="correct"> Peter Hernandez </button><br><br>
+        <button> Pedro Hernandez </button><br><br>
         <button> Antonio Hernandez </button><br><br>
         <div class = "exp">
             <img src="https://hungarianfreepress.com/wp-content/uploads/2019/06/Mars-Bruno-18-%C3%A9vesen-mam%C3%A1j%C3%A1val-3.jpg" alt="Peter" style="width: 280px; height: 200px">      
@@ -127,10 +146,10 @@
     </div>
 
     <div class="question">
-        <br><h3>Which song is <u>not</u> by Bruno Mars?</h3>
-        <button> Marry You </button>
-        <button class="correct"> Perfect Two </button>
-        <button> Count on Me </button>
+        <h3>Which song is <u>not</u> by Bruno Mars?</h3>
+        <button> Marry You </button><br><br>
+        <button class="correct"> Perfect Two </button><br><br>
+        <button> Count on Me </button><br><br>
         <button> Gorilla </button><br><br>
         <div class = "exp">
             <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/4SWEZDzjNiaxKGiYUASnzt?utm_source=generator&theme=0" width="50%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
@@ -138,9 +157,9 @@
     </div>
 
     <div class="question">
-        <br><h3>What is the opening line of Jingle Bells?</h3>
-        <button> Rockin' Around </button>
-        <button> Chesnuts roasting </button>
+        <h3>What is the opening line of Jingle Bells?</h3>
+        <button> Rockin' Around </button><br><br>
+        <button> Chesnuts roasting </button><br><br>
         <button class="correct"> Dashing through the snow </button><br><br>
         <div class = "exp">
             <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/14tbD5Q9g4VymuAGnh9Tn1?utm_source=generator&theme=0" width="50%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
@@ -148,9 +167,9 @@
     </div>
 
     <div class="question">
-        <br><h3>What is a song from Taylor Swift's 1989 album?</h3>
-        <button class="correct"> Style </button>
-        <button> End Game </button>
+        <h3>What is a song from Taylor Swift's 1989 album?</h3>
+        <button class="correct"> Style </button><br><br>
+        <button> End Game </button><br><br>
         <button> Back to December </button><br><br>
         <div class = "exp">
             <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/0ug5NqcwcFR2xrfTkc7k8e?utm_source=generator&theme=0" width="50%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
@@ -158,14 +177,12 @@
     </div>
 
     <h2>
-        <b> <br><br>
-             SCORE = 
-            <span class="score-element"> 0 </span>
-        </b>
+        SCORE = 
+        <span class="score-element"> 0 </span>
     </h2>
 
     <footer>
-    <h3> Did you get 10? If you did... <br> CONGRATS! </h3>
+    <h3> <br> Did you get 10? </h3>
     </footer>
 
     <script>
