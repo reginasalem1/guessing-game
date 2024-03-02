@@ -1,12 +1,12 @@
 
   .vinyl1 {
-    width: 50vh; 
-    height: 50vh; 
+    width: 40vh; 
+    height: 40vh; 
     background-image: url('https://pngimg.com/d/vinyl_PNG18.png');
     background-size: cover;
     border-radius: 50%;
     position: fixed;
-    top: 15%;
+    top: 12%;
     left: 25%;
     animation: spin 10s linear infinite;
   }
@@ -42,7 +42,7 @@
     background-size: cover;
     border-radius: 50%; /* Makes the background circular */
     position: fixed;
-    top: 70%;
+    top: 50%;
     left: 0%;
     animation: spin 10s linear infinite;
   }
@@ -90,8 +90,8 @@
     background-size: cover;
     border-radius: 50%; /* Makes the background circular */
     position: fixed;
-    top: 15%;
-    left: -5%;
+    top: 0;
+    left: -3%;
     animation: spin 10s linear infinite;
   }
   
