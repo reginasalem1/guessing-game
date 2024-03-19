@@ -101,52 +101,52 @@
 <body>
 
 <div class="disk-container">
-    <div id="vinyl1" class="disk hidden" onmouseover="playSong(this)" onmouseleave="pauseSong(this)"></div>
+    <div id="vinyl1" class="disk hidden" onmouseover="playSong(0)" onmouseleave="pauseSong(0)"></div>
     <audio class="song" src="wannabe.mp3"></audio>
 </div>
 
 <div class="disk-container">
-    <div id="vinyl2" class="disk hidden" onmouseover="playSong(this)" onmouseleave="pauseSong(this)"></div>
+    <div id="vinyl2" class="disk hidden" onmouseover="playSong(1)" onmouseleave="pauseSong(1)"></div>
     <audio class="song" src="loveyourself.mp3"></audio>
 </div>
 
 <div class="disk-container">
-    <div id="vinyl3" class="hidden" onmouseover="playSong()" onmouseleave="pauseSong()"></div>
+    <div id="vinyl3" class="hidden" onmouseover="playSong(2)" onmouseleave="pauseSong(2)"></div>
     <audio class="song" src="backboys.mp3"></audio>
 </div>
 
 <div class="disk-container">
-    <div id="vinyl4" class="hidden" onmouseover="playSong()" onmouseleave="pauseSong()"></div>
+    <div id="vinyl4" class="hidden" onmouseover="playSong(3)" onmouseleave="pauseSong(3)"></div>
     <audio class="song" src="sos.mp3"></audio>
 </div>
 
 <div class="disk-container">
-    <div id="vinyl5" class="hidden" onmouseover="playSong()" onmouseleave="pauseSong()"></div>
+    <div id="vinyl5" class="hidden" onmouseover="playSong(4)" onmouseleave="pauseSong(4)"></div>
     <audio class="song" src="rihanna.mp3"></audio>
 </div>
 
 <div class="disk-container">
-    <div id="vinyl6" class="hidden" onmouseover="playSong()" onmouseleave="pauseSong()"></div>
+    <div id="vinyl6" class="hidden" onmouseover="playSong(5)" onmouseleave="pauseSong(5)"></div>
     <audio class="song" src="fenty.mp3"></audio>
 </div>
 
 <div class="disk-container">
-    <div id="vinyl7" class="hidden" onmouseover="playSong()" onmouseleave="pauseSong()"></div>
+    <div id="vinyl7" class="hidden" onmouseover="playSong(6)" onmouseleave="pauseSong(6)"></div>
     <audio class="song" src="brunomars.mp3"></audio>
 </div>
 
 <div class="disk-container">
-    <div id="vinyl8" class="hidden" onmouseover="playSong()" onmouseleave="pauseSong()"></div>
+    <div id="vinyl8" class="hidden" onmouseover="playSong(7)" onmouseleave="pauseSong(7)"></div>
     <audio class="song" src="perfecttwo.mp3"></audio>
 </div>
 
 <div class="disk-container">
-    <div id="vinyl9" class="hidden" onmouseover="playSong()" onmouseleave="pauseSong()"></div>
+    <div id="vinyl9" class="hidden" onmouseover="playSong(8)" onmouseleave="pauseSong(8)"></div>
     <audio class="song" src="jinglebells.mp3"></audio>
 </div>
 
 <div class="disk-container">
-    <div id="vinyl10" class="hidden" onmouseover="playSong()" onmouseleave="pauseSong()"></div>
+    <div id="vinyl10" class="hidden" onmouseover="playSong(9)" onmouseleave="pauseSong(9)"></div>
     <audio class="song" src="style.mp3"></audio>
 </div>
 
@@ -301,13 +301,23 @@
             }
 
 
-            function playSong(disk) {
-                let audio = disk.nextElementSibling;
+            // function playSong(disk) {
+            //     let audio = disk.nextElementSibling;
+            //     audio.play();
+            // }          
+
+            // function pauseSong(disk) {
+            //     let audio = disk.nextElementSibling;
+            //     audio.pause();
+            // }
+
+            function playSong(index) {
+                let audio = document.querySelectorAll('.song')[index];
                 audio.play();
             }          
 
-            function pauseSong(disk) {
-                let audio = disk.nextElementSibling;
+            function pauseSong(index) {
+                let audio = document.querySelectorAll('.song')[index];
                 audio.pause();
             }
 
@@ -331,6 +341,13 @@
                 }
 
                 disableButtons(question);
+            }
+
+            function disableButtons(question) {
+                let currentButtons = question.querySelectorAll("button");
+                for (let button of currentButtons){
+                    button.disabled = true;
+                }
             }
 
             for (let button of myButtons) {
