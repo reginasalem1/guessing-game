@@ -77,7 +77,7 @@
             height: 300px;
         }
 
-        .swiper-pagination{
+        .swiper-scrollbar{
             margin-right: 98%;
         }
 
@@ -100,14 +100,43 @@
 
 <body>
 
-<div class="vinyl1"></div>
-<div class="vinyl2"></div>
-<div class="vinyl3"></div>
-<div class="vinyl4"></div>
-<div class="vinyl5"></div>
-<div class="vinyl6"></div>
-<div class="vinyl7"></div>
-<div class="vinyl8"></div>
+<div class="disk-container">
+<div id="vinyl1" class="disk hidden" onmouseover="playSong(this)" onmouseleave="pauseSong(this)"></div>
+<audio class="song" src="wannabe.mp3"></audio>
+</div>
+
+<div class="disk-container">
+<div id="vinyl2" class="disk hidden" onmouseover="playSong(this)" onmouseleave="pauseSong(this)"></div>
+<audio class="song" src="loveyourself.mp3"></audio>
+</div>
+
+<div class="disk-container">
+<div id="vinyl3" class="hidden" onmouseover="playSong()" onmouseleave="pauseSong()"></div>
+<audio class="song" src="wannabe.mp3"></audio>
+</div>
+
+<div id="vinyl4" class="hidden" onmouseover="playSong()" onmouseleave="pauseSong()"></div>
+<audio class="song" src="wannabe.mp3"></audio>
+
+<div id="vinyl5" class="hidden" onmouseover="playSong()" onmouseleave="pauseSong()"></div>
+<audio class="song" src="wannabe.mp3"></audio>
+
+<div id="vinyl6" class="hidden" onmouseover="playSong()" onmouseleave="pauseSong()"></div>
+<audio class="song" src="wannabe.mp3"></audio>
+
+<div id="vinyl7" class="hidden" onmouseover="playSong()" onmouseleave="pauseSong()"></div>
+<audio class="song" src="wannabe.mp3"></audio>
+
+<div id="vinyl8" class="hidden" onmouseover="playSong()" onmouseleave="pauseSong()"></div>
+<audio class="song" src="wannabe.mp3"></audio>
+
+<div id="vinyl9" class="hidden" onmouseover="playSong()" onmouseleave="pauseSong()"></div>
+<audio class="song" src="wannabe.mp3"></audio>
+
+<div id="vinyl10" class="hidden" onmouseover="playSong()" onmouseleave="pauseSong()"></div>
+<audio class="song" src="wannabe.mp3"></audio>
+
+</div>
 
 <section>
 <br><br><br><p>THE MUSIC QUIZ</p><br>
@@ -121,22 +150,15 @@
         <button> Bohemian Raphsody - Queen</button>
         <button class="correct"> Wannabe - Spice Girls</button>
         <button> Uptown Funk - Bruno Mars</button><br><br>
-        <div class = "exp">
-            <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/1Je1IMUlBXcx1Fz0WE7oPT?utm_source=generator&theme=0" width="50%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>        
-        </div>
     </div>
   </div>
 
   <div class="swiper-slide">
     <div class="question">
         <h3>Which are Justin Bieber songs?</h3>
-        <button> Baby </button>
-        <button> Confident </button>
-        <button> Love Youself </button>
-        <button class="correct"> All of them </button><br><br>
-        <div class = "exp">
-            <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/6epn3r7S14KUqlReYr77hA?utm_source=generator&theme=0" width="50%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
-        </div>
+        <button> Who Says </button>
+        <button> Burnin' </button>
+        <button class="correct"> Love Yourself </button><br><br>
     </div>
   </div>
 
@@ -146,9 +168,6 @@
         <button class="correct"> Backstreet Boys </button>
         <button> NSYNC </button>
         <button> New Kids on the Block </button><br><br>
-        <div class = "exp">
-            <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/47BBI51FKFwOMlIiX6m8ya?utm_source=generator&theme=0" width="50%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>        
-        </div>
     </div>
     </div>
     
@@ -158,9 +177,6 @@
         <button> Joe </button>
         <button class="correct"> Kevin </button>
         <button> Nick </button><br><br>
-        <div class = "exp">
-            <img src="https://www.adnradio.cl/resizer/w6_JcIq3QDJsHKXZh1tAtJNilt4=/768x576/filters:format(jpg):quality(70)/cloudfront-us-east-1.images.arcpublishing.com/prisachile/LQY4VE42QNPZLFJS25VQR3MPME.jpg" alt="Kevin" style="width: 230px; height: 150px">
-        </div>
     </div>
   </div>
 
@@ -170,9 +186,6 @@
         <button> Loud </button>
         <button> A Girl Like Me </button>
         <button class="correct"> Music Of The Sun </button><br><br>
-        <div class = "exp">
-            <iframe style="border-radius:12px" src="https://open.spotify.com/embed/album/4FyGpObwABjn0o8Tdp7AZz?utm_source=generator&theme=0" width="50%" height="252" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>        
-        </div>
     </div>
   </div>
 
@@ -182,10 +195,7 @@
         <button class="correct"> Fenty </button>
         <button> Thompson </button>
         <button> Daria </button><br><br>
-        <div class = "exp">
-            <img src="https://assets.teenvogue.com/photos/59c2ad34ecf80f4919690b31/16:9/w_2560%2Cc_limit/fenty-lede.jpg" alt="Fenty" style="width: 230px; height: 150px">      
-        </div>
-    </div>
+      </div>
     </div>
 
   <div class="swiper-slide">
@@ -194,10 +204,7 @@
         <button class="correct"> Peter Hernandez </button>
         <button> Pedro Hernandez </button>
         <button> Antonio Hernandez </button><br><br>
-        <div class = "exp">
-            <img src="https://hungarianfreepress.com/wp-content/uploads/2019/06/Mars-Bruno-18-%C3%A9vesen-mam%C3%A1j%C3%A1val-3.jpg" alt="Peter" style="width: 230px; height: 150px">      
-        </div>
-    </div>
+      </div>
     </div>
 
   <div class="swiper-slide">
@@ -207,10 +214,7 @@
         <button class="correct"> Perfect Two </button>
         <button> Count on Me </button>
         <button> Gorilla </button><br><br>
-        <div class = "exp">
-            <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/4SWEZDzjNiaxKGiYUASnzt?utm_source=generator&theme=0" width="50%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
-        </div>
-    </div>
+      </div>
     </div>
 
     <div class="swiper-slide">
@@ -219,10 +223,7 @@
         <button> Rockin' Around </button>
         <button> Chesnuts roasting </button>
         <button class="correct"> Dashing through the snow </button><br><br>
-        <div class = "exp">
-            <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/14tbD5Q9g4VymuAGnh9Tn1?utm_source=generator&theme=0" width="50%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
-        </div>
-    </div>
+      </div>
     </div>
 
     <div class="swiper-slide">
@@ -231,14 +232,12 @@
         <button class="correct"> Style </button>
         <button> End Game </button>
         <button> Back to December </button><br><br>
-        <div class = "exp">
-            <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/0ug5NqcwcFR2xrfTkc7k8e?utm_source=generator&theme=0" width="50%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
-        </div>
     </div>
   </div>
+
 </div>
 
-<div class="swiper-pagination"></div>
+<div class="swiper-scrollbar"></div>
 
 <div class="swiper-button-next"></div>
 
@@ -255,11 +254,11 @@
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
     <script>
-        //Define button
+
         let myButtons = document.querySelectorAll('button');
         let scoreElement = document.querySelector('.score-element');
-
         let score = 0;
+        let currentQuestionIndex = 0;
 
         function oneQuestion(swiper) {
             let exp = question.querySelector("swiper-slide");
@@ -268,12 +267,11 @@
         }
 
         const swiper = new Swiper('.swiper', {
-            // Optional parameters
             direction: 'vertical',
             loop: true,
 
-        pagination: {
-            el: '.swiper-pagination',
+        scrollbar: {
+             el: '.swiper-scrollbar',
         },
 
          navigation: {
@@ -282,53 +280,48 @@
 
             });
 
-        function disableButtons(question) {
-
-            let currentButtons = question.querySelectorAll("button");
-
-            for (let button of currentButtons){
-                button.disabled = true;
+            function unhideDisks(index) {
+                let diskId = 'vinyl' + (index + 1);
+                let disk = document.getElementById(diskId);
+                disk.classList.remove('hidden');
             }
-        }
-
-        function showExp(question) {
-
-            let exp = question.querySelector(".exp");
-            console.log(".exp");
-            exp.style.display = "block"
-
-        }
-        
-        function checkAnswer(event){
-            //alert ("Checking answer")
-            let button = event.target;
-            let question = button.parentElement;
-
-            //Get boolean (if button has class correct or not)
-            let isCorrect = button.classList.contains("correct");
-            button.classList.add("clicked");
 
 
-            if (isCorrect){
-                score++;
-                scoreElement.innerText = score;
-            
-            } else{
+            function playSong(disk) {
+                let audio = disk.nextElementSibling;
+                audio.play();
+            }          
+
+            function pauseSong(disk) {
+                let audio = disk.nextElementSibling;
+                audio.pause();
+            }
+
+            function checkAnswer(event) {
+                let button = event.target;
+                let question = button.parentElement;
+                let isCorrect = button.classList.contains("correct");
                 button.classList.add("clicked");
+
+                if (isCorrect) {
+                    score++;
+                    scoreElement.innerText = score;
+
+                    unhideDisks(currentQuestionIndex);
+
+                    currentQuestionIndex++;
+
+                    if (currentQuestionIndex >= myButtons.length) {
+                        console.log("Finished!")
+                    }
+                }
+
+                disableButtons(question);
             }
 
-
-            disableButtons(question);
-            showExp(question);
-        }
-
-        for(let button of myButtons){
-            console.log(button);
-
-          //When clicked, check answer
-            button.onclick = checkAnswer;
-
-        }
+            for (let button of myButtons) {
+                button.onclick = checkAnswer;
+            }
 
     </script>
 

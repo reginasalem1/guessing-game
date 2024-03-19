@@ -1,23 +1,23 @@
-
-  .vinyl1 {
+  
+  #vinyl1 {
     width: 40vh; 
     height: 40vh; 
     background-image: url('https://pngimg.com/d/vinyl_PNG18.png');
     background-size: cover;
     border-radius: 50%;
     position: fixed;
-    top: 12%;
+    /* top: 12%; */
     left: 25%;
     animation: spin 5s linear infinite;
     animation-play-state: paused;
   }
 
-  .vinyl2 {
-    width: 50vh; /* Adjust as needed to cover the entire viewport */
-    height: 50vh; /* Adjust as needed to cover the entire viewport */
-    background-image: url('https://pngimg.com/d/vinyl_PNG18.png'); /* Replace 'vinyl-disk.png' with your vinyl disk image */
+  #vinyl2 {
+    width: 50vh; 
+    height: 50vh;
+    background-image: url('https://pngimg.com/d/vinyl_PNG18.png'); 
     background-size: cover;
-    border-radius: 50%; /* Makes the background circular */
+    border-radius: 50%; 
     position: fixed;
     top: 70%;
     left: 95%;
@@ -25,12 +25,12 @@
     animation-play-state: paused;
   }
 
-  .vinyl3 {
-    width: 50vh; /* Adjust as needed to cover the entire viewport */
-    height: 50vh; /* Adjust as needed to cover the entire viewport */
-    background-image: url('https://pngimg.com/d/vinyl_PNG18.png'); /* Replace 'vinyl-disk.png' with your vinyl disk image */
+  #vinyl3 {
+    width: 50vh; 
+    height: 50vh;
+    background-image: url('https://pngimg.com/d/vinyl_PNG18.png');
     background-size: cover;
-    border-radius: 50%; /* Makes the background circular */
+    border-radius: 50%;
     position: fixed;
     top: 90%;
     left: 40%;
@@ -38,12 +38,12 @@
     animation-play-state: paused;
   }
 
-  .vinyl4 {
-    width: 50vh; /* Adjust as needed to cover the entire viewport */
-    height: 50vh; /* Adjust as needed to cover the entire viewport */
-    background-image: url('https://pngimg.com/d/vinyl_PNG18.png'); /* Replace 'vinyl-disk.png' with your vinyl disk image */
+  #vinyl4 {
+    width: 50vh; 
+    height: 50vh; 
+    background-image: url('https://pngimg.com/d/vinyl_PNG18.png');
     background-size: cover;
-    border-radius: 50%; /* Makes the background circular */
+    border-radius: 50%; 
     position: fixed;
     top: 50%;
     left: 0%;
@@ -51,12 +51,12 @@
     animation-play-state: paused;
   }
 
-  .vinyl5 {
-    width: 50vh; /* Adjust as needed to cover the entire viewport */
-    height: 50vh; /* Adjust as needed to cover the entire viewport */
-    background-image: url('https://pngimg.com/d/vinyl_PNG18.png'); /* Replace 'vinyl-disk.png' with your vinyl disk image */
+  #vinyl5 {
+    width: 50vh; 
+    height: 50vh; 
+    background-image: url('https://pngimg.com/d/vinyl_PNG18.png'); 
     background-size: cover;
-    border-radius: 50%; /* Makes the background circular */
+    border-radius: 50%;
     position: fixed;
     top: 5%;
     left: 80%;
@@ -64,12 +64,12 @@
     animation-play-state: paused;
   }
 
-  .vinyl6 {
-    width: 85vh; /* Adjust as needed to cover the entire viewport */
-    height: 85vh; /* Adjust as needed to cover the entire viewport */
-    background-image: url('https://pngimg.com/d/vinyl_PNG18.png'); /* Replace 'vinyl-disk.png' with your vinyl disk image */
+  #vinyl6 {
+    width: 85vh;
+    height: 85vh; 
+    background-image: url('https://pngimg.com/d/vinyl_PNG18.png'); 
     background-size: cover;
-    border-radius: 50%; /* Makes the background circular */
+    border-radius: 50%; 
     position: fixed;
     top: 110%;
     left: 71%;
@@ -77,12 +77,12 @@
     animation-play-state: paused;
   }
 
-  .vinyl7 {
-    width: 70vh; /* Adjust as needed to cover the entire viewport */
-    height: 70vh; /* Adjust as needed to cover the entire viewport */
-    background-image: url('https://pngimg.com/d/vinyl_PNG18.png'); /* Replace 'vinyl-disk.png' with your vinyl disk image */
+  #vinyl7 {
+    width: 70vh; 
+    height: 70vh; 
+    background-image: url('https://pngimg.com/d/vinyl_PNG18.png'); 
     background-size: cover;
-    border-radius: 50%; /* Makes the background circular */
+    border-radius: 50%;
     position: fixed;
     top: 20%;
     left: 105%;
@@ -90,19 +90,44 @@
     animation-play-state: paused;
   }
 
-  .vinyl8 {
-    width: 70vh; /* Adjust as needed to cover the entire viewport */
-    height: 70vh; /* Adjust as needed to cover the entire viewport */
-    background-image: url('https://pngimg.com/d/vinyl_PNG18.png'); /* Replace 'vinyl-disk.png' with your vinyl disk image */
+  #vinyl8 {
+    width: 70vh; 
+    height: 70vh; 
+    background-image: url('https://pngimg.com/d/vinyl_PNG18.png');
     background-size: cover;
-    border-radius: 50%; /* Makes the background circular */
+    border-radius: 50%; 
     position: fixed;
     top: 0;
     left: -3%;
     animation: spin 5s linear infinite;
     animation-play-state: paused;
   }
-  
+
+  #vinyl9 {
+    width: 30vh; 
+    height: 30vh; 
+    background-image: url('https://pngimg.com/d/vinyl_PNG18.png');
+    background-size: cover;
+    border-radius: 50%; 
+    position: fixed;
+    top: 85%;
+    left: 8%;
+    animation: spin 5s linear infinite;
+    animation-play-state: paused;
+  }
+
+  #vinyl10 {
+    width: 30vh; 
+    height: 30vh;
+    background-image: url('https://pngimg.com/d/vinyl_PNG18.png');
+    background-size: cover;
+    border-radius: 50%;
+    position: fixed;
+    top: 8%;
+    left: 42%;
+    animation: spin 5s linear infinite;
+    animation-play-state: paused;
+  }
   
   @keyframes spin {
     0% {
@@ -113,34 +138,46 @@
     }
   }
   
-  .vinyl1:hover {
+  #vinyl1:hover {
     animation: spin 5s linear infinite;
   }
 
-  .vinyl2:hover {
+  #vinyl2:hover {
     animation: spin 5s linear infinite;
   }
 
-  .vinyl3:hover {
+  #vinyl3:hover {
     animation: spin 5s linear infinite;
   }
 
-  .vinyl4:hover {
+  #vinyl4:hover {
     animation: spin 5s linear infinite;
   }
 
-  .vinyl5:hover {
+  #vinyl5:hover {
     animation: spin 5s linear infinite;
   }
 
-  .vinyl6:hover {
+  #vinyl6:hover {
     animation: spin 5s linear infinite;
   }
 
-  .vinyl7:hover {
+  #vinyl7:hover {
     animation: spin 5s linear infinite;
   }
 
-  .vinyl8:hover {
+  #vinyl8:hover {
     animation: spin 5s linear infinite;
+  }
+
+  #vinyl9:hover {
+    animation: spin 5s linear infinite;
+  }
+
+  #vinyl10:hover {
+    animation: spin 5s linear infinite;
+  }
+
+  .hidden {
+    display: none;
   }
